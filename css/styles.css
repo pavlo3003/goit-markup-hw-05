@@ -294,7 +294,8 @@ header {
   color: var(--secondary-text-color-theme-light);
   margin-bottom: 50px;
 }
-.galery-list-description {
+
+.galery-list-description-text {
   display: flex;
   position: absolute;
   width: 100%;
@@ -303,12 +304,9 @@ header {
   bottom: 0;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-}
-.galery-list-description-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
@@ -370,7 +368,7 @@ header {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
-  transition-property: background-color;
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -415,6 +413,9 @@ header {
   border-radius: 4px;
   height: 92px;
   width: 170px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
   fill: #afb1b8;
@@ -560,7 +561,7 @@ footer {
   max-height: 38px;
   border: 0px;
   border-radius: 4px;
-  transition-property: background-color;
+  transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
